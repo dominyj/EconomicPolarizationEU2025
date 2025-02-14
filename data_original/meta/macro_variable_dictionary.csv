@@ -1,0 +1,28 @@
+﻿source;dbnomics_id;countrycode;variable_name;unit;Note;url
+AMECO;AMECO/UBCA/*.1.0.310.0.UBCA;ameco;current_account;;Current Account;
+AMECO;AMECO/ZUTN/*.1.0.0.0.ZUTN;ameco;unemployment;;Unemployment;
+AMECO;AMECO/ALCD0/*.1.0.0.0.ALCD0;ameco;adj_wage_share;;Adjusted wage share;
+AMECO;AMECO/UDGG/*.1.0.319.0.UDGG;ameco;public_debt_to_gdp;;Public Debt to GDP;
+AMECO;AMECO/PLCD/*.3.1.99.0.PLCD;ameco;nulc;;Nominal unit labour costs;
+AMECO;AMECO/QLCD/*.3.1.0.0.QLCD;ameco;rulc;;Real unit labour costs;
+WDI;WB/WDI/A-NY.GDP.PCAP.PP.KD-*;wb;gdp_real_pc_ppp;PPP (constant 2021 international $);Real GDP per capita;
+WDI;WB/WDI/A-SL.IND.EMPL.ZS-*;wb;industry_employment_share;% of total employment;;
+WDI;WB/WDI/A-BX.KLT.DINV.WD.GD.ZS-*;wb;fdi_percGDP;% of GDP;FDI net inflows;
+WDI;WB/WDI/A-BX.KLT.DINV.CD.WD-*;wb;fdi_current_dollar;current US$;FDI net inflows;
+WDI;WB/WDI/A-NE.EXP.GNFS.ZS-*;wb;trade_exp_GDP;% of GDP;Exports of goods and services (% of GDP);
+WDI;WB/WDI/A-SP.POP.TOTL-*;wb;population;;;
+OECD;OECD/DSD_FIN_DASH@DF_FIN_DASH_S11/A.*.LES11_FD4.PT_B1GQ;iso3c;debt_corp_nf_percGDP;;Gross debt of non-financial corporations;
+OECD;OECD/DSD_FIN_DASH@DF_FIN_DASH_S12/A.*.LES12_FD4.PT_B1GQ;iso3c;debt_corp_f_percGDP;;Gross debt of financial corporations;
+OECD;OECD/DSD_FIN_DASH@DF_FIN_DASH_S13/A.*.LES13_FD4.PT_B1GQ;iso3c;debt_gov_percGDP;;Gross debt of government;
+OECD;OECD/DSD_FIN_DASH@DF_FIN_DASH_S1M/A.*.LES1M_FD4.PT_B6G_S1M;iso3c;debt_hh_npish_percGDI;;Gross debt of households and and NPISH;https://db.nomics.world/OECD/DSD_FIN_DASH@DF_FIN_DASH_S1M?q=OECD%2FDSD_FIN_DASH%40DF_FIN_DASH_S1M%2FA.*.LES1M_FD4.PT_B6G_S1M&tab=list
+OECD;OECD/DSD_FIN_DASH@DF_FIN_DASH_S1/A.*.LES1_BF90.PT_B1GQ;iso3c;total_debt_percGDP;;Gross debt of total economy;
+OECD;OECD/DSD_BOP@DF_IIP/*.WXD.FA.N.LE.A.USD_EXC.N;iso3c;foreign_ownership;;International investment position;https://db.nomics.world/OECD/DSD_BOP@DF_IIP?tab=list
+Eurostat;Eurostat/irt_lt_mcby_a/A.MCBY.*;eurostat;bond_yield;;EMU convergence criterion bond yields;
+Eurostat;Eurostat/nama_10_a64/A.CP_MEUR.B-E.P1.*;eurostat;industry_output;;Industry Output;
+AMECO;AMECO/ZCPIH/*.1.0.0.0.ZCPIH;ameco;hcpi;;;
+AMECO;AMECO/UBLH/*.1.0.99.0.UBLH;ameco;sfb_household;;;https://db.nomics.world/AMECO/UBLH?dimensions=%7B%22unit%22%3A%5B%22mrd-ecu-eur%22%5D%7D&q=ameco%20UBLH&tab=list
+AMECO;AMECO/UBLC/*.1.0.99.0.UBLC;ameco;sfb_corp;;;
+AMECO;AMECO/UBLGE/*.1.0.99.0.UBLGE;ameco;sfb_gov;;;
+AMECO;AMECO/UVGD/*.1.0.99.0.UVGD;ameco;sfb_gdp;;;
+AMECO;AMECO/UBLA/*.1.0.99.0.UBLA;ameco;sfb_foreign;;;
+OECD;OECD/DSD_NAMAIN10@DF_TABLE1_INCOME/A.*.S1.S1.B1GQ._Z._Z._Z.USD_EXC.V.N.T0103;iso3c;gdp_oecd;US-Dollar, exchange rate converted;Current GDP;https://db.nomics.world/OECD/DSD_NAMAIN10@DF_TABLE1_INCOME?dimensions=%7B%22SECTOR%22%3A%5B%22S1%22%5D%2C%22TRANSACTION%22%3A%5B%22B1GQ%22%5D%2C%22UNIT_MEASURE%22%3A%5B%22USD_EXC%22%5D%2C%22PRICE_BASE%22%3A%5B%22V%22%5D%7D&q=OECD%20gdp%20USD_EXC&tab=list

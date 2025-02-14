@@ -1,0 +1,10 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+data/raw/*
+data_original/raw/*
+.DS_Store
+**/.DS_Store
+output/fig/exploratory/*
+
