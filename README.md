@@ -31,7 +31,7 @@ source("00_run_analysis.R")
 - **`data/`** is used for analysis.
 
 ## Authors
-- **Jonas Dominy** 
+- **Jonas Dominy**
 - [**Claudius Gräbner-Radkowitsch**](https://claudius-graebner.com/)
 - [**Philipp Heimberger**](https://wiiw.ac.at/philipp-heimberger-s-1138.html)
 - [**Jakob Kapeller**](https://jakob-kapeller.org/)
