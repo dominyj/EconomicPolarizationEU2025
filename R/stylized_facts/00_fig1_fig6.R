@@ -129,8 +129,8 @@ dev.off()
 
 
 
-# Fig 8
-fig8a <- plot_list$`5_industry_employment_share`+
+# Fig 6
+fig6a <- plot_list$`5_industry_employment_share`+
   labs(title = "Industry Employment Share",
        subtitle = "population-weighted averages",
        y = "% of total employment")+
@@ -139,15 +139,15 @@ fig8a <- plot_list$`5_industry_employment_share`+
                                                      accuracy = 1),
                      expand = expansion(mult = c(0.03, 0.15)))
 
-fig8b <- plot_list$`6_hs_eci_distance_to_p95`+
+fig6b <- plot_list$`6_hs_eci_distance_to_p95`+
   labs(title = "Economic Complexity Relative to Technology Frontier",
        subtitle = "population-weighted averages",
        y = "Distance to 95th percentile (HS-based ECI)")+
   scale_y_continuous(expand = expansion(mult = c(0.03, 0.15)))
 
-combined_fig8 <- ggarrange(
-  fig8a + theme(legend.position = "none"),
-  fig8b + theme(legend.position = "none"),
+combined_fig6 <- ggarrange(
+  fig6a + theme(legend.position = "none"),
+  fig6b + theme(legend.position = "none"),
   labels = c("a)", "b)"),
   ncol = 2,
   nrow = 1,
@@ -156,18 +156,18 @@ combined_fig8 <- ggarrange(
 )
 
 # Add caption with source information for all panels
-final_fig8 <- annotate_figure(combined_fig8,
+final_fig6 <- annotate_figure(combined_fig6,
                               bottom = text_grob("Source: World Development Indicators (World Bank) for panel a); own calculations based on Atlas of Economic Complexity, Harvard Growth Lab for panel b)",
                                                  hjust = 1, x = 0.99,
                                                  size = 10))
 
 # Save final figure
-ggsave(file = here("output/fig/final/pdf/fig7.pdf"), plot = final_fig8,
+ggsave(file = here("output/fig/final/pdf/fig6.pdf"), plot = final_fig6,
        width = 12, height = 5)
-ggsave(file = here("output/fig/final/eps/fig7.eps"), plot = final_fig8,
+ggsave(file = here("output/fig/final/eps/fig6.eps"), plot = final_fig6,
        width = 12, height = 5,
        device = cairo_ps)
 
-emf(here("output/fig/final/emf/fig7.emf"), width = 12, height = 5)
-print(final_fig8)
+emf(here("output/fig/final/emf/fig6.emf"), width = 12, height = 5)
+print(final_fig6)
 dev.off()
