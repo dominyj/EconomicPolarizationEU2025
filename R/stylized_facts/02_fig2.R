@@ -49,7 +49,7 @@ group_configs <- list(
     ~var_name,           ~title,              ~y_label,               ~reference_groups,              ~log_scale,
     "unemployment",      "Unemployment",       "% of Labor Force",     NULL,                          FALSE,
     "debt_gov_percGDP",  "Government Debt",    "% of GDP",            NULL,                           FALSE,
-    "total_debt_percGDP", "Total Debt",        "% of GDP",            NULL,                           FALSE,
+    "total_debt_percGDP", "Net Financial Position",        "% of GDP",            NULL,                           FALSE,
     "trade_exp_GDP",     "Exports",            "% of GDP",            list(c("Core", "Workbench")),   FALSE
   ),
 
@@ -261,7 +261,8 @@ ggsave(file = here("output/fig/final/pdf/fig2.pdf"),
 ggsave(file = here("output/fig/final/eps/fig2.eps"),
        plot = combined_group_fig,
        width = 12, height = 8,
-       device = cairo_ps)
+       device = cairo_ps,
+       dpi = 600)
 
 # EMF version
 emf(here("output/fig/final/emf/fig2.emf"), width = 12, height = 8)
